@@ -16,8 +16,8 @@ use utils::layer::Layer;
 //define a static stirng called description
 static DESCRIPTION: &'static str = "This is our super cool collection";
 static IMAGE_PREFIX: &'static str = "NFT";
-static START_TOKEN_ID: u32 = 500;
-static END_TOKEN_ID: u32 = 700;
+static START_TOKEN_ID: u32 = 60001;
+static END_TOKEN_ID: u32 = 60200;
 
 fn main() {
     if START_TOKEN_ID > END_TOKEN_ID {
@@ -37,7 +37,7 @@ fn main() {
         Layer::new(String::from("Color Filter A"), String::from("layers/Color Filter A")),
         Layer::new(String::from("Bereichit Base"), String::from("layers/Bereichit Base")),
         Layer::new(String::from("Bereichit Touch A"), String::from("layers/Bereichit Touch A")),
-        Layer::new(String::from("Color Filter B"), String::from("layers/Color Filter B")),
+        
         Layer::new(String::from("Element A"), String::from("layers/Element A")),
         Layer::new(String::from("Barbed 1H"), String::from("layers/Barbed 1H")),
         Layer::new(String::from("Barbed 2H"), String::from("layers/Barbed 2H")),
