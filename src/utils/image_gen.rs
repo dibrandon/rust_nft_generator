@@ -10,7 +10,7 @@ pub fn generate(pathToSaveTo: &str, file_names: Vec<String>) {
         overlay(&mut combined_image, &next_image, 0, 0);
     }
 
-    let save_operation = combined_image.save_with_format(pathToSaveTo, image::ImageFormat::Png);
+    let save_operation = combined_image.save_with_format_and_density(pathToSaveTo, image::ImageFormat::Png, 150);
     match save_operation {
         Ok(_) => println!("{} generated", pathToSaveTo),
         Err(_) => println!("Image not saved {:?}", save_operation),
