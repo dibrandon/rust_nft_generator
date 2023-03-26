@@ -16,8 +16,8 @@ use utils::layer::Layer;
 //define a static stirng called description
 static DESCRIPTION: &'static str = "This is art";
 static IMAGE_PREFIX: &'static str = "NFT";
-static START_TOKEN_ID: u32 = 500;
-static END_TOKEN_ID: u32 = 700;
+static START_TOKEN_ID: u32 = 701;
+static END_TOKEN_ID: u32 = 750;
 
 fn main() {
     if START_TOKEN_ID > END_TOKEN_ID {
